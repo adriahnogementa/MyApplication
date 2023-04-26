@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 public class OutputFragment extends Fragment {
 
@@ -37,10 +38,19 @@ public class OutputFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragments, container, false);
-
         TextView output = view.findViewById(R.id.fragmentTextView);
+        output.setOnClickListener(this::onTextClicked);
         output.setText(this.content);
         return view;
+    }
+
+    public void onTextClicked(View view){
+        FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();
+        transaction.hide(this);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
+
     }
 
 }
