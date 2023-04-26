@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="forename">Vorname</string>
+    <string name="surname">Nachname</string>
+    <string name="welcome_msg">Guten Tag! Geben Sie bitte Ihren Namen ein.</string>
+    <string name="done">Weiter</string>
+    <string name="welcome_msg_with_name">Guten Tag %1$s %2$s.</string>
+    <string name="return_button">zurück</string>
+    <string name="Telefonnummer">Telefonnummer</string>
+    <string name="ZuKontaktenHin">Zu Kontakten hinzufügen</string>
+    <string name="Anrufen">Anrufen</string>
+    <string name="FragmentButton">Zu den Fragmenten</string>
+    <string name="bla_bla_bla">Bla Bla bla...</string>
+</resources>
