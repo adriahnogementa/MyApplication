@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Add" />
+        android:text="@string/add" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentBox"
@@ -30,6 +30,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragments" />
+
+    <LinearLayout
+        android:id="@+id/fragment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 
 
 </LinearLayout>

@@ -19,7 +19,7 @@ public class FragmentActivity extends androidx.fragment.app.FragmentActivity {
     public void addTextAsFragment() {
         TextView textView = findViewById(R.id.textViewFragment);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.fragmentBox,
+        transaction.add(R.id.fragment_list,
                         OutputFragment.newInstance(textView.getText().toString()));
         transaction.addToBackStack(null);
         transaction.commit();
