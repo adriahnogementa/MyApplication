@@ -16,10 +16,11 @@ public class FragmentActivity extends androidx.fragment.app.FragmentActivity {
         add.setOnClickListener(v -> addTextAsFragment());
     }
 
-    public void addTextAsFragment(){
+    public void addTextAsFragment() {
         TextView textView = findViewById(R.id.textViewFragment);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.fragmentBox, OutputFragment.newInstance(textView.getText().toString()));
+        transaction.add(R.id.fragmentBox,
+                        OutputFragment.newInstance(textView.getText().toString()));
         transaction.addToBackStack(null);
         transaction.commit();
 
