@@ -44,5 +44,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Es" />
+
+        <Button
+            android:id="@+id/zuPractice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="zuLayoutPractice" />
     </LinearLayout>
 </FrameLayout>

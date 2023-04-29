@@ -50,6 +50,12 @@ public class StartFragment extends Fragment {
 
         });
 
+        binding.zuPractice.setOnClickListener(v -> {
+
+            Navigation.findNavController(v).navigate(StartFragmentDirections.actionStartFragmentToLayoutPractice());
+
+        });
+
         return binding.getRoot();
     }
 

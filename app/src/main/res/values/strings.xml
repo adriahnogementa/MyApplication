@@ -21,4 +21,7 @@
     <string name="zur_anrede">zur Anrede</string>
     <string name="herr">Hallo Herr %1$s %2$s.</string>
     <string name="frau">Hallo Frau %1$s %2$s.</string>
+    <string name="textview">TextView</string>
+    <string name="_2_box">2. Box</string>
+    <string name="_1_box">1.Box</string>
 </resources>
