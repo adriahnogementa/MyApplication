@@ -22,15 +22,27 @@
         <EditText
             android:id="@+id/nachname"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:inputType="text"
             android:text="Name" />
 
         <Button
-            android:id="@+id/zuAnredeFragment"
+            android:id="@+id/zurHerr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/zur_anrede" />
+            android:text="Herr" />
+
+        <Button
+            android:id="@+id/zurFrau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frau" />
+
+        <Button
+            android:id="@+id/zurEs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Es" />
     </LinearLayout>
 </FrameLayout>

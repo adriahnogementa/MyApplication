@@ -20,7 +20,23 @@ public class AnredeFragment extends Fragment {
         FragmentAnredeBinding binding = FragmentAnredeBinding.inflate(inflater);
         assert getArguments() != null;
         AnredeFragmentArgs args = AnredeFragmentArgs.fromBundle(getArguments());
-        binding.anrede.setText(args.getVorname() + args.getNachname());
+
+        if (args.getIstMann()) {
+
+            binding.anrede.setText(getString(R.string.herr, args.getVorname(), args.getNachname()));
+        }
+        else if (args.getIstFrau()) {
+
+            binding.anrede.setText(getString(R.string.frau, args.getVorname(), args.getNachname()));
+        }
+        else {
+
+            binding.anrede.setText(getString(R.string.welcome_msg_with_name, args.getVorname(),
+                                             args.getNachname()));
+
+        }
+
+
         return binding.getRoot();
 
 

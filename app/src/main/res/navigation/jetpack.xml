@@ -18,6 +18,12 @@
         <argument
             android:name="Nachname"
             app:argType="string" />
+        <argument
+            android:name="istMann"
+            app:argType="boolean" />
+        <argument
+            android:name="istFrau"
+            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/startFragment"

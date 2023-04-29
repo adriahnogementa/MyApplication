@@ -23,11 +23,31 @@ public class StartFragment extends Fragment {
 
         binding = FragmentStartBinding.inflate(inflater);
         View view = inflater.inflate(R.layout.fragment_start, container, false);
-        binding.zuAnredeFragment.setOnClickListener(v -> {
+        binding.zurHerr.setOnClickListener(v -> {
 
             Navigation.findNavController(v).navigate(StartFragmentDirections.actionStartFragmentToAnredeFragment(
-                    binding.vorname.getText().toString(), binding.nachname.getText().toString()
+                    binding.vorname.getText().toString(), binding.nachname.getText().toString(),
+                    true, false
+
             ));
+        });
+
+        binding.zurFrau.setOnClickListener(v -> {
+
+            Navigation.findNavController(v).navigate(StartFragmentDirections.actionStartFragmentToAnredeFragment(
+                    binding.vorname.getText().toString(), binding.nachname.getText().toString(),
+                    false, true
+            ));
+
+        });
+
+        binding.zurEs.setOnClickListener(v -> {
+
+            Navigation.findNavController(v).navigate(StartFragmentDirections.actionStartFragmentToAnredeFragment(
+                    binding.vorname.getText().toString(), binding.nachname.getText().toString(),
+                    false, false
+            ));
+
         });
 
         return binding.getRoot();
