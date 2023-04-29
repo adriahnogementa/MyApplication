@@ -81,9 +81,16 @@
 
         <Button
             android:id="@+id/buttonSwitchToPermission"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:onClick="switchToPermission"
             android:text="Zu Berechtigungen" />
+
+        <Button
+            android:id="@+id/zuWelcomeFragmentButton"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:onClick="switchToNavActivity"
+            android:text="zu Welcome Frag" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

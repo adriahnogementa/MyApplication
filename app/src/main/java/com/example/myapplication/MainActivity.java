@@ -77,6 +77,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentToFragement);
     }
 
+    public void switchToNavActivity(View view) {
+        Intent intentToNav = new Intent(this, NavActivity.class);
+        startActivity(intentToNav);
+
+    }
+
     public void switchToPermission(View view) {
         Intent intentToPermission = new Intent(this, PermissionActivity.class);
         startActivity(intentToPermission);

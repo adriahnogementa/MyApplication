@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/jetpack">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/jetpack"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/anredeFragment"
+        android:name="com.example.myapplication.AnredeFragment"
+        android:label="fragment_anrede"
+        tools:layout="@layout/fragment_anrede">
+        <action
+            android:id="@+id/action_anredeFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+        <argument
+            android:name="vorname"
+            app:argType="string" />
+        <argument
+            android:name="Nachname"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.myapplication.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_anredeFragment"
+            app:destination="@id/anredeFragment" />
+    </fragment>
 </navigation>
