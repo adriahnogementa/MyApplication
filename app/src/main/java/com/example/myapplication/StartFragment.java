@@ -94,7 +94,7 @@ public class StartFragment extends Fragment {
 
         PendingIntent intent = PendingIntent.getActivity(getActivity(), 0,
                                                          new Intent(getActivity(),
-                                                                    StartFragment.class).setAction(Intent.ACTION_VIEW).putExtra("extra", "Hallo ich bin auch noch hier"), PendingIntent.FLAG_UPDATE_CURRENT + PendingIntent.FLAG_IMMUTABLE);
+                                                                    MainActivity.class).setAction(Intent.ACTION_VIEW).putExtra("extra", "Hallo ich bin auch noch hier"), PendingIntent.FLAG_UPDATE_CURRENT + PendingIntent.FLAG_IMMUTABLE);
 
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(getActivity(),

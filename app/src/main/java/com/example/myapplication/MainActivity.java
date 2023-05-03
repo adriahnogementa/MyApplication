@@ -36,12 +36,16 @@ public class MainActivity extends AppCompatActivity {
         inputSurname = findViewById(R.id.surnameEditText);
         inputPhone = findViewById(R.id.editTextPhone);
 
-        String cache = getIntent() != null && getIntent().getExtras() != null ?
-                getIntent().getExtras().getString("extra"
-        ) : "test";
 
-        inputForename.setText(cache);
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (getIntent().getExtras() != null) {
+            inputForename.setText(getIntent().getExtras().getString("extra"));
+        }
     }
 
     public void welcomeUser(View view) {
@@ -98,10 +102,9 @@ public class MainActivity extends AppCompatActivity {
     private void processCreateContactActivityResult(@Nullable ActivityResult activityResult) {
         View parentLayout = findViewById(android.R.id.content);
 
-        Snackbar.make(parentLayout, Activity.RESULT_OK == activityResult.getResultCode() ? "Der " +
-                              "Kontakt wurde erfolgreich angelegt" : "Der Kontakt wurde nicht " +
-                              "angelegt!",
-                      Snackbar.LENGTH_LONG).setAction("CLOSE", view -> {
+        Snackbar.make(parentLayout, Activity.RESULT_OK == activityResult.getResultCode() ?
+                "Der " + "Kontakt wurde erfolgreich angelegt" : "Der Kontakt wurde nicht " +
+                "angelegt!", Snackbar.LENGTH_LONG).setAction("CLOSE", view -> {
         }).show();
     }
 
