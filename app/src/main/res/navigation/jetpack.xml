@@ -33,10 +33,18 @@
         <action
             android:id="@+id/action_startFragment_to_layoutPractice"
             app:destination="@id/layoutPractice" />
+        <action
+            android:id="@+id/action_startFragment_to_itemFragment"
+            app:destination="@id/itemFragment" />
     </fragment>
     <fragment
         android:id="@+id/layoutPractice"
         android:name="com.example.myapplication.LayoutPracticeFragment"
         android:label="ÜbungLayout"
         tools:layout="@layout/fragment_layout_practice" />
+    <fragment
+        android:id="@+id/itemFragment"
+        android:name="com.example.myapplication.MonthListFragment"
+        android:label="Monate"
+        tools:layout="@layout/fragment_item_list" />
 </navigation>

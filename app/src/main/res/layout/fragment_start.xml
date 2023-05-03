@@ -50,5 +50,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="zuLayoutPractice" />
+
+        <Button
+            android:id="@+id/kontext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kontext" />
+
+        <Button
+            android:id="@+id/zurListe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zu der Liste" />
+
+        <Button
+            android:id="@+id/snackbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zeige die Snackbar!" />
     </LinearLayout>
 </FrameLayout>

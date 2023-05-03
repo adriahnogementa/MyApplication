@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         inputForename = findViewById(R.id.forenameEditText);
         inputSurname = findViewById(R.id.surnameEditText);
         inputPhone = findViewById(R.id.editTextPhone);
+
+        String cache = getIntent() != null && getIntent().getExtras() != null ?
+                getIntent().getExtras().getString("extra"
+        ) : "test";
+
+        inputForename.setText(cache);
+
     }
 
     public void welcomeUser(View view) {
@@ -97,5 +104,6 @@ public class MainActivity extends AppCompatActivity {
                       Snackbar.LENGTH_LONG).setAction("CLOSE", view -> {
         }).show();
     }
+
 
 }
