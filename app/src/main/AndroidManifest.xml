@@ -27,6 +27,8 @@
         <activity android:name="com.example.myapplication.FragmentActivity" />
         <activity android:name=".PermissionActivity" />
         <activity android:name=".NavActivity" />
+        <activity android:name=".LiveDataActivity"></activity>
+
     </application>
 
 </manifest>

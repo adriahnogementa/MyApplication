@@ -92,5 +92,12 @@
             android:layout_height="wrap_content"
             android:onClick="switchToNavActivity"
             android:text="zu Welcome Frag" />
+
+        <Button
+            android:id="@+id/liveData"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:onClick="switchToLiveData"
+            android:text="Zu LiveData" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

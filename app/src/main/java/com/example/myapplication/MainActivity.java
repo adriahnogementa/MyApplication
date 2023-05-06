@@ -99,6 +99,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentToPermission);
     }
 
+    public void switchToLiveData(View view) {
+
+        Intent intentToLiveData = new Intent(this, LiveDataActivity.class);
+        startActivity(intentToLiveData);
+
+    }
+
     private void processCreateContactActivityResult(@Nullable ActivityResult activityResult) {
         View parentLayout = findViewById(android.R.id.content);
 
