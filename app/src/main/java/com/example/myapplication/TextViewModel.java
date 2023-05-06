@@ -11,7 +11,7 @@ public class TextViewModel extends ViewModel {
         return text;
     }
 
-    public void setText(MutableLiveData<String> text) {
-        this.text = text;
+    public void setText(String text) {
+        this.text.setValue(text);
     }
 }
