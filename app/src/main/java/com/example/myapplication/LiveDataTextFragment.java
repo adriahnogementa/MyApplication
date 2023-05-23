@@ -54,4 +54,11 @@ public class LiveDataTextFragment extends Fragment {
             //binding.liveDataText.setText(r);
         });
     }
+
+    public void setUps() {
+
+
+    }
+
+
 }

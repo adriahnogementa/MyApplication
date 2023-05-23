@@ -37,7 +37,6 @@ public class NavActivity extends AppCompatActivity {
 
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
 
-
     }
 
     @Override

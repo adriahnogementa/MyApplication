@@ -106,6 +106,20 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void switchToThreadActivity(View view) {
+
+        Intent intentToThread = new Intent(this, ThreadActivity.class);
+        startActivity(intentToThread);
+
+    }
+
+    public void switchToApiActivity(View view){
+
+
+        Intent intentToApi = new Intent(this, ApiFragment.class);
+        startActivity(intentToApi);
+    }
+
     private void processCreateContactActivityResult(@Nullable ActivityResult activityResult) {
         View parentLayout = findViewById(android.R.id.content);
 

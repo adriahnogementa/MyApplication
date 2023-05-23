@@ -23,12 +23,12 @@ public class LiveDataActivity extends AppCompatActivity {
         fragmentTextBinding = FragmentTextBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
-        //Fragen an den Meister: Dieses this impliziert, dass diese Klasse "LiveDataActivity" ist
-        // der Observer?
         textViewModel = new ViewModelProvider(this).get(TextViewModel.class);
 
         fragmentTextBinding.liveDataText.setText("Moin");
 
+        LiveDataTextFragment fragment = binding.fragmentContainerView.getFragment();
+
+        fragment.setUps();
     }
 }

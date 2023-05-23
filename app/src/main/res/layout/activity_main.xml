@@ -99,5 +99,19 @@
             android:layout_height="wrap_content"
             android:onClick="switchToLiveData"
             android:text="Zu LiveData" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:onClick="switchToThreadActivity"
+            android:text="zumThread" />
+
+        <Button
+            android:id="@+id/apiBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="switchToApiActivity"
+            android:text="zur API" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

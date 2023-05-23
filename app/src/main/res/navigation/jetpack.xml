@@ -36,6 +36,9 @@
         <action
             android:id="@+id/action_startFragment_to_itemFragment"
             app:destination="@id/itemFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_apiFragment"
+            app:destination="@id/apiFragment" />
     </fragment>
     <fragment
         android:id="@+id/layoutPractice"
@@ -47,4 +50,8 @@
         android:name="com.example.myapplication.MonthListFragment"
         android:label="Monate"
         tools:layout="@layout/fragment_item_list" />
+    <fragment
+        android:id="@+id/apiFragment"
+        android:name="com.example.myapplication.ApiFragment"
+        android:label="ApiFragment" />
 </navigation>

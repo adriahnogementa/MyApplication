@@ -30,11 +30,9 @@ public class LiveDataButtonFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_with_button, container, false);
-        //binding = FragmentWithButtonBinding.inflate(inflater);
-        button1 = view.findViewById(R.id.firstButton);
-        button2 = view.findViewById(R.id.secondButton);
-        return view;
+        binding = FragmentWithButtonBinding.inflate(inflater);
+
+        return binding.getRoot();
     }
 
     @Override
@@ -43,12 +41,12 @@ public class LiveDataButtonFragment extends Fragment {
         textViewModel = new ViewModelProvider(requireActivity()).get(TextViewModel.class);
 
 
-        button1.setOnClickListener(v -> {
+        binding.firstButton.setOnClickListener(v -> {
 
             textViewModel.setText("Hallo ich bin der erste Knopf!");
         });
 
-        button2.setOnClickListener(v -> {
+        binding.secondButton.setOnClickListener(v -> {
 
             textViewModel.setText("Hallo ich bin der zweite Knopf!");
         });
