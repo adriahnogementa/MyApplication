@@ -31,6 +31,7 @@
         <activity android:name=".LiveDataActivity" />
         <activity android:name=".ThreadActivity" />
         <activity android:name=".ApiFragment"></activity>
+        <activity android:name=".DbActivity"></activity>
 
         <service android:name=".FibonacciService" />
 

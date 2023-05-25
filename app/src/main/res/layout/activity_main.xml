@@ -113,5 +113,12 @@
             android:layout_height="wrap_content"
             android:onClick="switchToApiActivity"
             android:text="zur API" />
+
+        <Button
+            android:id="@+id/zurDb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="switchToDB"
+            android:text="zur DB" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

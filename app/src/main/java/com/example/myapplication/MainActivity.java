@@ -113,11 +113,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void switchToApiActivity(View view){
+    public void switchToApiActivity(View view) {
 
 
         Intent intentToApi = new Intent(this, ApiFragment.class);
         startActivity(intentToApi);
+    }
+
+    public void switchToDB(View view) {
+
+        Intent intentToDB = new Intent(this, DbActivity.class);
+        startActivity(intentToDB);
+
     }
 
     private void processCreateContactActivityResult(@Nullable ActivityResult activityResult) {
