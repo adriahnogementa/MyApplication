@@ -18,7 +18,8 @@
             android:layout_height="wrap_content"
             android:text="@string/welcome_msg"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textColor="@android:color/system_accent1_400" />
+            android:textColor="@android:color/system_accent1_400"
+            android:textSize="10sp" />
 
         <EditText
             android:id="@+id/forenameEditText"
@@ -120,5 +121,12 @@
             android:layout_height="wrap_content"
             android:onClick="switchToDB"
             android:text="zur DB" />
+
+        <Button
+            android:id="@+id/btnSensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="switchToSensor"
+            android:text="Zum Sensor" />
     </LinearLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

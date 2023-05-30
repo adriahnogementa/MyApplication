@@ -127,6 +127,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void switchToSensor(View view) {
+
+        startActivity(new Intent(this, SensorActivity.class));
+    }
+
     private void processCreateContactActivityResult(@Nullable ActivityResult activityResult) {
         View parentLayout = findViewById(android.R.id.content);
 
